@@ -9,17 +9,17 @@ public class Bin : MonoBehaviour
     [SerializeField] public Transform topbun;
     [SerializeField] public Transform hotdog;
     [SerializeField] public Transform burger;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnMouseDown()
@@ -49,6 +49,55 @@ public class Bin : MonoBehaviour
 
         }
 
-      
+
+        if (gameObject.name == "BURGER")
+        {
+            if (GamePlay.grill1 == "empty")
+            {
+                //Instantiate(burger, new Vector2(-0.257f, -1.77f), burger.rotation);
+                Instantiate(burger, new Vector2(7.39f, -1.53f), burger.rotation);
+                GamePlay.grill1 = "full";
+            }
+
+            else if (GamePlay.grill2 == "empty")
+            {
+                //Instantiate(burger, new Vector2(1.38f, -1.77f), burger.rotation);
+                Instantiate(burger, new Vector2(6.42f, -0.86f), burger.rotation);
+                GamePlay.grill2 = "full";
+            }
+
+            else if (GamePlay.grill3 == "empty")
+            {
+                //Instantiate(burger, new Vector2(3.02f, -1.79f), burger.rotation);
+                Instantiate(burger, new Vector2(7.13f, -0.04f), burger.rotation);
+                GamePlay.grill3 = "full";
+            }
+
+        }
+
+        if (gameObject.name == "hotdog")
+        {
+            if (GamePlay.grill1 == "empty")
+            {
+                //Instantiate(burger, new Vector2(-0.257f, -1.77f), burger.rotation);
+                Instantiate(hotdog, new Vector2(7.39f, -1.53f), hotdog.rotation);
+                GamePlay.grill1 = "full";
+            }
+
+            else if (GamePlay.grill2 == "empty")
+            {
+                //Instantiate(burger, new Vector2(1.38f, -1.77f), burger.rotation);
+                Instantiate(hotdog, new Vector2(6.42f, -0.86f), hotdog.rotation);
+                GamePlay.grill2 = "full";
+            }
+
+            else if (GamePlay.grill3 == "empty")
+            {
+                //Instantiate(burger, new Vector2(3.02f, -1.79f), burger.rotation);
+                Instantiate(hotdog, new Vector2(7.13f, -0.04f), hotdog.rotation);
+                GamePlay.grill3 = "full";
+            }
+
+        }
     }
 }

@@ -10,9 +10,9 @@ public class GamePlay : MonoBehaviour
     public static string cuttingboard2 = "empty";
     public static string cuttingboard3 = "empty";
 
-    public static string grill1;
-    public static string grill2; 
-    public static string grill3;
+    public static string grill1 = "empty";
+    public static string grill2 = "empty"; 
+    public static string grill3 = "empty";
 
     void Start()
     {
