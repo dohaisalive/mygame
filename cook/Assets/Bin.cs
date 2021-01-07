@@ -30,21 +30,24 @@ public class Bin : MonoBehaviour
             {
                 Instantiate(bottombun, new Vector2(-1.27f, -2.28f), bottombun.rotation);
                 Instantiate(topbun, new Vector2(-1.324f, -2.175f), topbun.rotation);
-                GamePlay.cuttingboard1 = "full";
+                GamePlay.cuttingboard1 = "justbun";
+                GamePlay.selectedslot = 1 ;
             }
 
             else if (GamePlay.cuttingboard2 == "empty")
             {
                 Instantiate(bottombun, new Vector2(0.34f, -2.28f), bottombun.rotation);
                 Instantiate(topbun, new Vector2(0.28f, -2.14f), topbun.rotation);
-                GamePlay.cuttingboard2 = "full";
+                GamePlay.cuttingboard2 = "justbun";
+                GamePlay.selectedslot = 2;
             }
 
             else if (GamePlay.cuttingboard3 == "empty")
             {
                 Instantiate(bottombun, new Vector2(1.98f, -2.27f), bottombun.rotation);
                 Instantiate(topbun, new Vector2(1.90f, -2.09f), topbun.rotation);
-                GamePlay.cuttingboard3 = "full";
+                GamePlay.cuttingboard3 = "justbun";
+                GamePlay.selectedslot = 3;
             }
 
         }
@@ -54,21 +57,20 @@ public class Bin : MonoBehaviour
         {
             if (GamePlay.grill1 == "empty")
             {
-                //Instantiate(burger, new Vector2(-0.257f, -1.77f), burger.rotation);
+               
                 Instantiate(burger, new Vector2(7.39f, -1.53f), burger.rotation);
                 GamePlay.grill1 = "full";
             }
 
             else if (GamePlay.grill2 == "empty")
             {
-                //Instantiate(burger, new Vector2(1.38f, -1.77f), burger.rotation);
+               
                 Instantiate(burger, new Vector2(6.42f, -0.86f), burger.rotation);
                 GamePlay.grill2 = "full";
             }
 
             else if (GamePlay.grill3 == "empty")
             {
-                //Instantiate(burger, new Vector2(3.02f, -1.79f), burger.rotation);
                 Instantiate(burger, new Vector2(7.13f, -0.04f), burger.rotation);
                 GamePlay.grill3 = "full";
             }
@@ -79,21 +81,21 @@ public class Bin : MonoBehaviour
         {
             if (GamePlay.grill1 == "empty")
             {
-                //Instantiate(burger, new Vector2(-0.257f, -1.77f), burger.rotation);
+                
                 Instantiate(hotdog, new Vector2(7.39f, -1.53f), hotdog.rotation);
                 GamePlay.grill1 = "full";
             }
 
             else if (GamePlay.grill2 == "empty")
             {
-                //Instantiate(burger, new Vector2(1.38f, -1.77f), burger.rotation);
+                
                 Instantiate(hotdog, new Vector2(6.42f, -0.86f), hotdog.rotation);
                 GamePlay.grill2 = "full";
             }
 
             else if (GamePlay.grill3 == "empty")
             {
-                //Instantiate(burger, new Vector2(3.02f, -1.79f), burger.rotation);
+               
                 Instantiate(hotdog, new Vector2(7.13f, -0.04f), hotdog.rotation);
                 GamePlay.grill3 = "full";
             }

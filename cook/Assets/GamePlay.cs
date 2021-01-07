@@ -14,6 +14,13 @@ public class GamePlay : MonoBehaviour
     public static string grill2 = "empty"; 
     public static string grill3 = "empty";
 
+    public static int selectedsandwitch = 0;
+    public static int selectedslot = 0;
+
+    public KeyCode givefood;
+    public static string deletefood = "no";
+    public static string currentmeat;
+
     void Start()
     {
         
@@ -22,6 +29,9 @@ public class GamePlay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(givefood))
+        {
+            deletefood = "yes";
+        }
     }
 }

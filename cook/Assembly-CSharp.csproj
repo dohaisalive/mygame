@@ -67,6 +67,9 @@
     <Compile Include="Assets\Bin.cs" />
     <Compile Include="Assets\Cook.cs" />
     <Compile Include="Assets\GamePlay.cs" />
+    <Compile Include="Assets\Person.cs" />
+    <Compile Include="Assets\Sandwich.cs" />
+    <Compile Include="Assets\Toppings.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
